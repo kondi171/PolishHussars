@@ -1,5 +1,17 @@
-<script setup></script>
+<script setup>
+import Header from "@/components/Header.vue";
+import About from "@/components/About.vue";
+import Metrics from "@/components/Metrics.vue";
+import Footer from "@/components/Footer.vue";
+</script>
 
 <template>
-  <h1>Hello, World!</h1>
+  <div class="landing-layout">
+    <Header />
+    <main>
+      <About />
+      <Metrics />
+    </main>
+    <Footer />
+  </div>
 </template>

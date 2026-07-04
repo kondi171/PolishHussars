@@ -1,5 +1,41 @@
-* {
+@import "variables";
+
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background-color: $backgroundColor;
+  color: $fontColor;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-image: radial-gradient(circle at center, #1f1610 0%, #0d0d0d 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// Globalny styl dla przycisków w stylu growym
+.btn-game {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, $redColor 0%, #611010 100%);
+  border: 2px solid $primaryColor;
+  color: $fontColor;
+  font-family: $headerFont;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.2);
+    box-shadow: 0 6px 15px rgba($primaryColor, 0.2);
+  }
 }
